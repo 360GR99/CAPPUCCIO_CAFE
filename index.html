@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPPUCCIO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        header {
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 20px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .tour-container {
+            margin-bottom: 20px;
+            width: 80%;
+            max-width: 80%;
+        }
+
+        .info-map-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .store-info {
+            width: 45%;
+            margin-top: 50px;
+        }
+
+        .social-menu {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 70px;
+        }
+
+        .map-container {
+            justify-content: start;
+        }
+
+        .menulink {
+            text-decoration: none;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        .button-5 {
+            align-items: center;
+            background-clip: padding-box;
+            background-color: #fa6400;
+            border: 1px solid transparent;
+            border-radius: .25rem;
+            box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+            box-sizing: border-box;
+            color: #fff;
+            cursor: pointer;
+            display: inline-flex;
+            font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            justify-content: center;
+            line-height: 1.25;
+            margin: 0;
+            min-height: 3rem;
+            padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+            position: relative;
+            text-decoration: none;
+            transition: all 250ms;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: baseline;
+            width: auto;
+        }
+
+        .button-5:hover,
+        .button-5:focus {
+            background-color: #fb8332;
+            box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+        }
+
+        .button-5:hover {
+            transform: translateY(-1px);
+        }
+
+        .button-5:active {
+            background-color: #c85000;
+            box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+            transform: translateY(0);
+        }
+
+        .social-menu-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .fa-facebook {
+            font-size: 50px;
+            color: blue;
+            margin: 10px;
+        }
+
+        .fa-instagram {
+            font-size: 50px;
+            color: rgb(255, 140, 0);
+            margin: 10px;
+        }
+
+        .menu-link {
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .info-map-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .store-info, .map-container {
+                width: 90%;
+                margin: 0;
+                text-align: center;
+            }
+
+            .social-menu {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .button-5 {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .map-container iframe {
+                width: 100%;
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>CAPPUCCIO</h1>
+    </header>
+
+    <main>
+        <div class="tour-container">
+            <iframe src="https://kuula.co/share/collection/7bRZY?logo=1&info=1&fs=1&vr=0&sd=1&gyro=0&thumbs=1"
+                width="100%" height="500px" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="info-map-container">
+            <div class="store-info">
+                <h2>CAPPUCCIO</h2>
+                <p>Ηλία Ηλιού 30 11743, Αθήνα</p>
+                <p>Τηλ: 210 901 0092</p>
+                <div class="social-menu">
+                    <a href="https://www.facebook.com/p/Cappuccio-cafe-100063539771093/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/cappuccio_gr/?hl=en/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <button class="button-5" role="button" onclick="document.location='https://www.e-food.gr/delivery/menu/cappuccio'">MENU</button>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <h2>ΠΟΥ ΘΑ ΜΑΣ ΒΡΕΙΤΕ</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.9488642768524!2d23.713824!3d38.0016532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a32a2735f791%3A0x6d67d1bd3142c530!2zWG9tIGFsbCBkYXkgYmFyIHJlc3RhdXJhbnQgzqPOtc-Az4zOu865zrE!5e0!3m2!1sen!2sgr!4v1743163735530!5m2!1sen!2sgr"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
